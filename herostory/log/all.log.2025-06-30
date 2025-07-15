@@ -1,0 +1,113 @@
+2025-06-30 12:09:49 [main] INFO  ServerMain:46 - 服务器启动成功
+2025-06-30 12:11:56 [nioEventLoopGroup-3-2] INFO  GameMsgHandler:24 - 收到客户端消息userId: 1
+heroAvatar: "Hero_Hammer"
+
+2025-06-30 12:11:56 [nioEventLoopGroup-3-2] WARN  DefaultChannelPipeline:1101 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: class org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd cannot be cast to class io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame (org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd and io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame are in unnamed module of loader 'app')
+	at org.tinygame.herostory.GameMsgHandler.channelRead0(GameMsgHandler.java:25)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at org.tinygame.herostory.GameMsgDecoder.channelRead(GameMsgDecoder.java:37)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.Utf8FrameValidator.channelRead(Utf8FrameValidator.java:98)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:455)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-30 12:12:11 [nioEventLoopGroup-3-1] INFO  GameMsgHandler:24 - 收到客户端消息userId: 1
+heroAvatar: "Hero_Hammer"
+
+2025-06-30 12:12:11 [nioEventLoopGroup-3-1] WARN  DefaultChannelPipeline:1101 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.ClassCastException: class org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd cannot be cast to class io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame (org.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd and io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame are in unnamed module of loader 'app')
+	at org.tinygame.herostory.GameMsgHandler.channelRead0(GameMsgHandler.java:25)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at org.tinygame.herostory.GameMsgDecoder.channelRead(GameMsgDecoder.java:37)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:93)
+	at io.netty.handler.codec.http.websocketx.Utf8FrameValidator.channelRead(Utf8FrameValidator.java:98)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:455)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-30 12:13:34 [main] INFO  ServerMain:46 - 服务器启动成功
+2025-06-30 12:15:24 [main] INFO  ServerMain:46 - 服务器启动成功
+2025-06-30 12:30:03 [main] INFO  ServerMain:46 - 服务器启动成功
+2025-06-30 12:51:17 [main] INFO  ServerMain:46 - 服务器启动成功
+2025-06-30 13:09:20 [main] INFO  ServerMain:47 - 服务器启动成功
+2025-06-30 13:58:57 [main] INFO  ServerMain:47 - 服务器启动成功
+2025-06-30 14:16:27 [main] INFO  ServerMain:47 - 服务器启动成功
+2025-06-30 14:19:51 [main] INFO  ServerMain:47 - 服务器启动成功
+2025-06-30 14:29:15 [main] INFO  ServerMain:47 - 服务器启动成功
+2025-06-30 14:30:09 [nioEventLoopGroup-3-6] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:09 [nioEventLoopGroup-3-5] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:12 [nioEventLoopGroup-3-5] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:12 [nioEventLoopGroup-3-6] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:12 [nioEventLoopGroup-3-5] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:12 [nioEventLoopGroup-3-6] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:13 [nioEventLoopGroup-3-5] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:13 [nioEventLoopGroup-3-6] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:13 [nioEventLoopGroup-3-5] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:13 [nioEventLoopGroup-3-6] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:14 [nioEventLoopGroup-3-5] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:14 [nioEventLoopGroup-3-6] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:14 [nioEventLoopGroup-3-5] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:14 [nioEventLoopGroup-3-6] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:14 [nioEventLoopGroup-3-5] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:30:14 [nioEventLoopGroup-3-6] ERROR GameMsgEncoder:38 - 无法识别的消息类型，msgClazz=org.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult
+2025-06-30 14:32:43 [main] INFO  ServerMain:47 - 服务器启动成功
